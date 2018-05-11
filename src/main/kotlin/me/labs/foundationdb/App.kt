@@ -1,11 +1,11 @@
 package me.labs.foundationdb
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
 class App
 
 fun main(args: Array<String>) {
-    runApplication<App>(*args)
+    SpringApplication(App::class.java).run(*args)
 }
